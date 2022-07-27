@@ -5,10 +5,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TestService {
+
     @Autowired
     TestClient testClient;
 
-    public String TestFeign(){
+    public String testFeign() {
         return testClient.testFeign();
     }
 }

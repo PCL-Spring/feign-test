@@ -13,12 +13,12 @@ public class TestController {
 
     @GetMapping("/")
     public String main(){
-        return  testService.TestFeign();
+        return  testService.testFeign();
     }
 
     @GetMapping("/testfeign")
     public String testFeign(){
-        return "Test Feign Client";
+        return "Test Feign Client Binded";
     }
 
 }
